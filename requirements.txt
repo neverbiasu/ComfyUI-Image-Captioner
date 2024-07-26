@@ -1,0 +1,4 @@
+http
+torch
+dashscope
+torchvision
