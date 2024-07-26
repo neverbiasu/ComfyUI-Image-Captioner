@@ -13,20 +13,8 @@ Try asking for:
 
 ![image_captioner](assets/workflow.png)
 
-### NSFWness (FAQ #1 apparently)
-
-The model is quite capable of analysing NSFW images and returning NSFW replies. 
-
-It is unlikely to return an NSFW response to a SFW image, in my experience.
-It seems like this is because (1) the model's output is strongly conditioned on 
-the contents of the image so it's hard
-to activate concepts that aren't pictured and 
-(2) the VLM has had a hefty dose of safety-training.
-
-This is probably for the best in general.  But you will not have much success asking NSFW questions about SFW images.
-
 ## Installation
-1. `git clone https://github.com/ceruleandeep/ComfyUI-ImageCaptioner` into your `custom_nodes` folder 
+1. `git clone https://github.com/neverbiasu/ComfyUI-ImageCaptioner` into your `custom_nodes` folder 
     - e.g. `custom_nodes\ComfyUI-ImageCaptioner`  
 2. Open a console/Command Prompt/Terminal etc
 3. Change to the `custom_nodes/ComfyUI-ImageCaptioner` folder you just created 
@@ -37,14 +25,15 @@ This is probably for the best in general.  But you will not have much success as
 Add the node via `image` -> `ImageCaptioner`  
 
 Supports tagging and outputting multiple batched inputs.  
-- **model**: The VLM model to use. 
-- **prompt**: Question to ask the VLM
-- **max_tokens** Maximum length of response, in tokens. A token is approximately half a word.
-- **temperature** How much randomness to allow in the result.
+- **image**: The image you want to make captions. 
+- **api**: The API of dashscope.
+- **use_prompt**: The prompt to drive the VLMs.
 
 ## Requirements
 U need to get the API of dashscope from the [document](https://help.aliyun.com/zh/dashscope/developer-reference/acquisition-and-configuration-of-api-key?spm=a2c4g.11186623.0.0.7a32fa70GIg3tt)
 
 ## See also
 
+* [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
+* [llama.cpp](https://github.com/ggerganov/llama.cpp)
 * [ComfyUI-WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)
