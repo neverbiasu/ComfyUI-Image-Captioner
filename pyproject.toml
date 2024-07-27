@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-image-captioner"
+description = "A ComfyUI extension for generating captions for your images. Runs on your own system, no external services used, no filter.\nUses various VLMs with APIs to generate captions for images. You can give instructions or ask questions in natural language."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["http", "torch", "dashscope", "torchvision"]
+
+[project.urls]
+Repository = "https://github.com/neverbiasu/ComfyUI-Image-Captioner"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Image-Captioner"
+Icon = ""
