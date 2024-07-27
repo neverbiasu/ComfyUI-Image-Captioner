@@ -12,4 +12,4 @@ Repository = "https://github.com/neverbiasu/ComfyUI-Image-Captioner"
 [tool.comfy]
 PublisherId = "faych"
 DisplayName = "ComfyUI-Image-Captioner"
-Icon = ""
+Icon = "https://raw.githubusercontent.com/neverbiasu/ComfyUI-Image-Captioner/main/assets/icon.png"
