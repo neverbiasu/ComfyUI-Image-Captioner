@@ -1,6 +1,6 @@
 # ComfyUI ImageCaptioner
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assets/icon.png" style="width: 20%;" />
 </div>
 
