@@ -2,7 +2,7 @@
 name = "comfyui-image-captioner"
 description = "A ComfyUI extension for generating captions for your images. Runs on your own system, no external services used, no filter.\nUses various VLMs with APIs to generate captions for images. You can give instructions or ask questions in natural language."
 version = "1.0.1"
-license = "MIT"
+license = { text = "MIT License" }
 dependencies = ["http", "torch", "dashscope", "torchvision"]
 
 [project.urls]
